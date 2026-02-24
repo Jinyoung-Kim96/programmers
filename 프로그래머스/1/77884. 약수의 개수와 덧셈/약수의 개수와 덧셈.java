@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 class Solution {
     public int solution(int left, int right) {
