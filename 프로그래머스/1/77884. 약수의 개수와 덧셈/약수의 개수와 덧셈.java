@@ -1,17 +1,13 @@
-import java.util.ArrayList;
-
 class Solution {
     public int solution(int left, int right) {
         int answer = 0;
-        
-        for(int i = left; i <= right; i++){
-            ArrayList <Integer> numList = new ArrayList<>(); 
-            for(int j = 1; j <= i; j++){
-                if(i % j == 0){
-                    numList.add(j);
-                }
+
+        for(int i=left; i<=right; i++) {
+            if ( i % Math.sqrt(i) == 0 ){
+                answer -= i;
+            } else {
+                answer += i;
             }
-            answer = numList.size() % 2 == 0 ? answer + i : answer - i;
         }
         return answer;
     }
