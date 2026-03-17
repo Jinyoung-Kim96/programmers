@@ -1,5 +1,6 @@
 class Solution {
     public int solution(int[][] sizes) {
+        int answer = 0;
         int temp = 0;
         int rowNum = 0;
         int colNum = 0;
